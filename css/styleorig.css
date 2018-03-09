@@ -1,11 +1,66 @@
+/*
+ * Component:       Docs
+ * Description:     Defines styles for the UIkit documentation
+ ========================================================================== */
+
+
+/* Fonts
+ ========================================================================== */
+
+
+/* raleway-300 - latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/raleway-v12-latin-300.eot");
+    /* IE9 Compat Modes */
+    src: local("Raleway Light"), local("Raleway-Light"), url("../fonts/raleway-v12-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v12-latin-300.woff2") format("woff2"), url("../fonts/raleway-v12-latin-300.woff") format("woff"), url("../fonts/raleway-v12-latin-300.ttf") format("truetype"), url("../fonts/raleway-v12-latin-300.svg#Raleway") format("svg");
+    /* Legacy iOS */
+}
+
+
+/* raleway-regular - latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/raleway-v12-latin-regular.eot");
+    /* IE9 Compat Modes */
+    src: local("Raleway"), local("Raleway-Regular"), url("../fonts/raleway-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v12-latin-regular.woff2") format("woff2"), url("../fonts/raleway-v12-latin-regular.woff") format("woff"), url("../fonts/raleway-v12-latin-regular.ttf") format("truetype"), url("../fonts/raleway-v12-latin-regular.svg#Raleway") format("svg");
+    /* Legacy iOS */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.uk-navbar-nav>li>a {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Base
+ ========================================================================== */
+
+html {
+    overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Layout
+ ========================================================================== */
+
+
 /*Pages*/
-p a:hover {
-    color:  #718792;
-    text-decoration: none;
-}
-p a {
-    color: #1c313a;
-}
+
 .uk-divider {
     display: block;
     width: 15rem;
@@ -17,9 +72,11 @@ p a {
 .uk-container.top {
     margin-top: 50px;
 }
+
 .cover1 {
-    background: #1e1e1e url("../images/bg-1.jpg") no-repeat center center fixed;
+    background: #2a2a2a url("../images/bg-1.jpg") no-repeat center center fixed;
     background-size: cover;
+    /* height: 60em; */
     width: 100%;
 }
 
@@ -33,15 +90,63 @@ p a {
 }
 
 .cover1 .intro {
-    margin-top: 4em;
+    margin-top: 6em;
 }
-.cover1 .introimg {
-margin-top: 1.5em;
-padding-left: 100px;
-}   
+
 .cover1 .intro h1,
 .cover1 .intro p {
     padding: 20px;
+}
+
+.cover1 .introimg {
+    margin-top: 4.5em;
+}
+.uk-text-medium {
+    font-size: 16px;
+}
+
+.cover2 {
+    background: #2a2a2a url("../images/bg-1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 45em;
+    width: 100%;
+}
+
+.cover2 .tm-section1 h1 {
+    text-transform: uppercase;
+    color: #fff !important;
+}
+
+.cover2 .tm-section1 p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cover2 .intro {
+    margin-top: 6em;
+}
+.cover3 .intro p,
+.cover2 .intro p,
+.cover1 .intro h1 {
+    padding: 20px;
+}
+.cover3 {
+    background: #2a2a2a url("../images/bg-1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 30em;
+    width: 100%;
+}
+
+.cover3 .tm-section1 h1 {
+    text-transform: uppercase;
+    color: #fff !important;
+}
+
+.cover3 .tm-section1 p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cover3 .intro {
+    margin-top: 6em;
 }
 .features1 #features .uk-width-medium-1-4 {
     padding: 20px;
@@ -81,9 +186,9 @@ padding-left: 100px;
 }
 
 .cover2 {
-    background: #1e1e1e url("../images/bg-2.jpg") no-repeat center center fixed;
+    background: #2a2a2a url("../images/bg-1.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 43em;
+    height: 45em;
     width: 100%;
 }
 
@@ -99,10 +204,12 @@ padding-left: 100px;
 .cover2 .intro {
     margin-top: 6em;
 }
+
 .cover2 .intro p,
 .cover1 .intro h1 {
     padding: 20px;
 }
+
 .uk-icon-chevron-down {
     font-size: 10px;
     margin-left: 4px;
@@ -154,6 +261,17 @@ address p {
 .contact {
     margin-top: 10px;
 }
+
+.contact p a {
+    color: #00897B;
+}
+
+.contact p a:hover {
+    color: #004D40;
+    text-decoration: none;
+}
+
+
 /*App page*/
 
 .videoWrapper {
@@ -178,14 +296,16 @@ address p {
 .uk-dropdown {
     background: #000;
     border-color: #000;
-    opacity: 0.5;
+    opacity: 0.9;
 }
+
 .uk-dropdown li {
     cursor: pointer;
     width: 100%;
     list-style: none;
     font-size: 0.9em;
     font-weight: 500;
+    color: lightgrey;
     padding: 5px;
 }
 
@@ -196,12 +316,12 @@ address p {
 }
 
 .uk-dropdown li a {
-    color: lightgray;
     text-decoration: none;
 }
 
 
 /*Mobile Nav*/
+
 .uk-nav .uk-parent #dropdown li {
     padding: 5px;
     color: lightgrey;
@@ -216,7 +336,7 @@ address p {
 /*Footer*/
 
 .footer {
-    background: #1e1e1e;
+    background: #2A2A2A;
     padding-top: 40px;
     width: 100%;
 }
@@ -232,21 +352,11 @@ address p {
 .footer .social {
     text-align: right;
 }
-.footer .copyright p a {
-color: darkgray;
-text-decoration: none;
-}
-.footer .copyright p a:hover {
-color: lightgray;
-}
 
 @media (max-width: 780px) {
     .footer .social {
         text-align: center;
     }
-.cover1 .introimg {
-margin-top: 4.8em;
-}    
 }
 
 @media (min-width: 780px) {
@@ -297,22 +407,16 @@ margin-top: 4.8em;
 }
 
 .footer-title {
-    font-weight: 500;
-    color: whitesmoke;
+    color: #fff;
 }
 
 .footer-item {
     list-style: none;
     padding: 0;
-    line-height: 1.8em;
 }
 
 .footer-item li a {
     color: gray;
-    text-decoration: none;
-}
-.footer-item li a:hover {
-    color: #29434e;
 }
 
 
@@ -446,12 +550,12 @@ margin-top: 4.8em;
     position: relative;
     display: inline-block;
     padding: 15px 25px;
-    background-color: black;
+    background-color: #004D40;
     /*for compatibility with older browsers*/
-  background-image: -webkit-linear-gradient(#000,  #222);
-    background-image: -moz-linear-gradient(#000, #222);
-    background-image: -o-linear-gradient(#000, #222);
-    background-image: linear-gradient(#000,  #222);
+    background-image: -webkit-linear-gradient(#000, #004D40);
+    background-image: -moz-linear-gradient(#000, #004D40);
+    background-image: -o-linear-gradient(#000, #004D40);
+    background-image: linear-gradient(#000, #004D40);
     border: 1px solid #000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(255, 255, 255, 0.6);
     text-shadow: 0 -1px 0 black, 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -463,6 +567,7 @@ margin-top: 4.8em;
     line-height: 50px;
     font-size: 18px;
 }
+
 .tm-button-custom:after {
     content: '';
     position: absolute;
@@ -481,12 +586,12 @@ margin-top: 4.8em;
 .tm-button-custom:hover,
 .tm-button-custom:focus,
 .tm-button-custom:active {
-    background-color:  #444;
+    background-color: black;
     /*for compatibility with older browsers*/
-    background-image: -webkit-linear-gradient(#000, #444);
-    background-image: -moz-linear-gradient(#000, #444);
-    background-image: -o-linear-gradient(#000, #444);
-    background-image: linear-gradient(#000,#444);
+    background-image: -webkit-linear-gradient(#000, #222);
+    background-image: -moz-linear-gradient(#000, #222);
+    background-image: -o-linear-gradient(#000, #222);
+    background-image: linear-gradient(#000, #222);
     -webkit-transition: background-color .15s ease-in-out;
     -o-transition: background-color .15s ease-in-out;
     -moz-transition: background-color .15s ease-in-out;
@@ -533,7 +638,7 @@ margin-top: 4.8em;
     right: -1px;
     left: -1px;
     bottom: -1px;
-    background: #607d8b;
+    background: #00897B;
 }
 
 .tm-panel-link:hover:after {
@@ -541,7 +646,7 @@ margin-top: 4.8em;
 }
 
 .tm-panel-link:hover h2 {
-    color: #607d8b;
+    color: #00897B;
 }
 
 
@@ -559,9 +664,9 @@ margin-top: 4.8em;
     position: relative;
     width: 100px;
     margin: -60px auto 0 auto;
-    border: 0.15rem solid  #607d8b;
+    border: 0.15rem solid #00897B;
     border-radius: 50px;
-    background: #607d8b;
+    background: #00897B;
     line-height: 100px;
     color: #fff !important;
 }
