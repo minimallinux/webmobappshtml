@@ -1,19 +1,11 @@
 /*Pages*/
-p a:hover {
-    color:  #718792;
-    text-decoration: none;
-}
-p a {
-    color: #1c313a;
-}
 .uk-divider {
     display: block;
-    width: 15rem;
+    width: 16rem;
     height: 0.2rem;
     background-color: #dfe1e5;
     margin: 3rem auto;
 }
-
 .uk-container.top {
     margin-top: 50px;
 }
@@ -22,21 +14,18 @@ p a {
     background-size: cover;
     width: 100%;
 }
-
 .cover1 .tm-section1 h1 {
     text-transform: uppercase;
     color: #fff !important;
 }
-
 .cover1 .tm-section1 p {
     color: rgba(255, 255, 255, 0.9);
 }
-
 .cover1 .intro {
     margin-top: 4em;
 }
 .cover1 .introimg {
-margin-top: 1.5em;
+margin-top: -20px;
 padding-left: 100px;
 }   
 .cover1 .intro h1,
@@ -46,56 +35,49 @@ padding-left: 100px;
 .features1 #features .uk-width-medium-1-4 {
     padding: 20px;
 }
-
 .features1 .tm-section h2 {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
 }
-
+.features1 .notification h2 a {
+color: #fff;
+}
 .features1 .notification {
     background: #37474F;
     height: 60px;
     margin: 10px 0px;
     border-radius: 5px;
 }
-
 .features1 .notification h2 {
-    color: #fff;
+    color: #fff!important;
     padding-top: 14px;
     text-transform: none;
     font-size: 22px;
 }
-
 .features1 .tools img {
     border: solid 1px #dadada;
     margin-top: 10px;
 }
-
 .features1 .clients img {
     border: solid 1px #dadada;
 }
-
 .uk-text-medium {
     font-size: 16px;
 }
-
 .cover2 {
     background: #1e1e1e url("../images/bg-2.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 43em;
     width: 100%;
 }
-
 .cover2 .tm-section1 h1 {
     text-transform: uppercase;
     color: #fff !important;
 }
-
 .cover2 .tm-section1 p {
     color: rgba(255, 255, 255, 0.9);
 }
-
 .cover2 .intro {
     margin-top: 6em;
 }
@@ -107,7 +89,6 @@ padding-left: 100px;
     font-size: 10px;
     margin-left: 4px;
 }
-
 .tm-section.jumbotron {
     background: #fafafa;
     border: solid 1px #dadada;
@@ -115,9 +96,11 @@ padding-left: 100px;
     margin: 0 20px 20px 20px;
     padding: 40px;
 }
-
-
 /*Contact Page*/
+.map {
+padding-top: 10px;
+
+}
 
 .form {
     margin-top: 10px;
@@ -154,8 +137,7 @@ address p {
 .contact {
     margin-top: 10px;
 }
-/*App page*/
-
+/*Videos*/
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -163,7 +145,6 @@ address p {
     padding-top: 25px;
     height: 0;
 }
-
 .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -171,14 +152,12 @@ address p {
     width: 100%;
     height: 100%;
 }
-
-
 /*Desktop Nav Dropdown Div Only*/
-
 .uk-dropdown {
-    background: #000;
-    border-color: #000;
-    opacity: 0.5;
+    background: #191919;
+    border-color: #2f2f2f;
+    opacity: 1;
+
 }
 .uk-dropdown li {
     cursor: pointer;
@@ -188,39 +167,39 @@ address p {
     font-weight: 500;
     padding: 5px;
 }
-
 .uk-dropdown li:focus,
 .uk-dropdown li:hover {
-    background: #111;
-    color: #fff;
+    background: transparent;
 }
-
 .uk-dropdown li a {
-    color: lightgray;
+    color: #fff!important;
     text-decoration: none;
 }
-
-
+.uk-dropdown li a:focus, 
+.uk-dropdown li a:hover {
+    color: darkgrey!important;
+}
 /*Mobile Nav*/
+ul#dropdown li {
+display: none;
+}
+.uk-nav-header {
+list-style: none;
+}
 .uk-nav .uk-parent #dropdown li {
     padding: 5px;
     color: lightgrey;
 }
-
 .uk-nav .uk-parent #dropdown li:focus,
 .uk-nav .uk-parent #dropdown li:hover {
     color: #fff;
 }
-
-
 /*Footer*/
-
 .footer {
     background: #1e1e1e;
     padding-top: 40px;
     width: 100%;
 }
-
 .footer .divider {
     background: #46484a;
     width: 100%;
@@ -228,7 +207,6 @@ address p {
     margin: 2rem 0 1.5rem 0;
     border: none;
 }
-
 .footer .social {
     text-align: right;
 }
@@ -312,7 +290,7 @@ margin-top: 4.8em;
     text-decoration: none;
 }
 .footer-item li a:hover {
-    color: #29434e;
+    color: #446CB3;
 }
 
 
@@ -427,8 +405,6 @@ margin-top: 4.8em;
         border-left: 1px dashed rgba(255, 255, 255, 0.4);
     }
 }
-
-
 /*
  * Header section
  */
@@ -436,8 +412,6 @@ margin-top: 4.8em;
 .tm-logo {
     margin: 10px 0 20px 0;
 }
-
-
 /*Custom Button*/
 
 .tm-button-custom {
@@ -493,36 +467,26 @@ margin-top: 4.8em;
     transition: background-color .15s ease-in-out;
     color: #fff;
 }
-
-
 /*Glass effect*/
-
 .tm-image-pull {
     margin-bottom: -10px;
 }
-
-
 /*
  * Community
  */
-
 .tm-margin-large-bottom {
     margin-bottom: 30px;
 }
-
 .tm-panel-link {
     text-decoration: none;
     color: #444;
     padding: 30px 30px 60px 30px;
     border: 1px solid #e5e5e5;
 }
-
 .tm-panel-link:hover {
     text-decoration: none;
     color: #444;
 }
-
-
 /*Change color of underline*/
 
 .tm-panel-link:after {
@@ -533,7 +497,7 @@ margin-top: 4.8em;
     right: -1px;
     left: -1px;
     bottom: -1px;
-    background: #607d8b;
+    background: #607D8B;
 }
 
 .tm-panel-link:hover:after {
@@ -541,17 +505,13 @@ margin-top: 4.8em;
 }
 
 .tm-panel-link:hover h2 {
-    color: #607d8b;
+    color: #607D8B;
 }
-
-
 /* Only phones */
 
 .tm-grid-margin-large .uk-grid-margin {
     margin-top: 50px;
 }
-
-
 /*Change color of icons*/
 
 .tm-icon {
@@ -559,11 +519,11 @@ margin-top: 4.8em;
     position: relative;
     width: 100px;
     margin: -60px auto 0 auto;
-    border: 0.15rem solid  #607d8b;
+    border: 0.15rem solid  #607D8B;
     border-radius: 50px;
-    background: #607d8b;
+    background: #607D8B;
     line-height: 100px;
-    color: #fff !important;
+    color: #fff;
 }
 
 .tm-panel-link {
@@ -812,19 +772,6 @@ a.uk-navbar-toggle:focus a.uk-navbar-toggle:hover {
 .cm-show-more .cm-more-link:after {
     content: "(hide)";
 }
-
-
-/*
- * Download modal
- */
-
-.cm-modal textarea {
-    height: 400px;
-    resize: none;
-    font-family: Consolas, monospace, serif;
-}
-
-
 /*
  * Loading spinner
  */
