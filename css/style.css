@@ -180,9 +180,7 @@ address p {
     color: darkgrey!important;
 }
 /*Mobile Nav*/
-ul#dropdown li {
-display: none;
-}
+
 .uk-nav-header {
 list-style: none;
 }
